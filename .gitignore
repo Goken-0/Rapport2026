@@ -1,0 +1,10 @@
+# Sauvegardes locales des photos haute résolution (non déployées)
+assets/images/_originals/
+
+# Fichiers de sauvegarde / temporaires
+*.bak
+*.tmp
+
+# Fichiers système
+Thumbs.db
+.DS_Store

@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rapport de stage de 1ère année de BTS SIO option SISR - Léo Metgy, Conseil Départemental de la Somme. Infrastructure réseau, sécurité, téléphonie et interventions terrain." />
+  <title>Rapport de stage - Léo Metgy</title>
+  <link rel="canonical" href="https://goken-0.github.io/ResumeStage/" />
+  <meta name="author" content="Léo Metgy" />
+  <meta name="theme-color" content="#06080f" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+
+  <!-- Open Graph (partage LinkedIn / Facebook / Discord) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Rapport de stage - Léo Metgy" />
+  <meta property="og:title" content="Rapport de stage BTS SIO SISR - Conseil Départemental de la Somme" />
+  <meta property="og:description" content="Quatre semaines à la DSI du Conseil Départemental de la Somme : infrastructure réseau, sécurité, téléphonie IP et interventions terrain." />
+  <meta property="og:url" content="https://goken-0.github.io/ResumeStage/" />
+  <meta property="og:image" content="https://goken-0.github.io/ResumeStage/assets/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Façade du Conseil Départemental de la Somme" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rapport de stage BTS SIO SISR - Conseil Départemental de la Somme" />
+  <meta name="twitter:description" content="Quatre semaines à la DSI du Conseil Départemental de la Somme : réseau, sécurité, téléphonie IP, terrain." />
+  <meta name="twitter:image" content="https://goken-0.github.io/ResumeStage/assets/images/og-cover.jpg" />
+
+  <!-- Polices : chargement non bloquant -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#introduction">Aller au contenu</a>
+
+  <!-- Halos colorés (réfraction du verre) -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--1"></span>
+    <span class="aurora__blob aurora__blob--2"></span>
+    <span class="aurora__blob aurora__blob--3"></span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#introduction">Introduction</a>
+      <a href="#entreprise">Présentation</a>
+      <a href="#missions">Missions</a>
+      <a href="#competences">Compétences</a>
+      <a href="#bilan">Bilan</a>
+      <a href="#remerciements">Remerciements</a>
+      <a href="#annexes">Galerie</a>
+      <a href="#portfolio" class="nav__cta">Portfolio</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ============ PAGE DE GARDE ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <picture>
+        <source srcset="assets/images/logo-cyan.webp" type="image/webp" />
+        <img class="hero__logo reveal" src="assets/images/logo-cyan.png" width="1024" height="294" alt="Logo du Conseil Départemental de la Somme" />
+      </picture>
+      <p class="hero__eyebrow reveal">Rapport de stage · BTS SIO · Option SISR · 1ère année</p>
+      <h1 class="hero__title reveal">
+        Infrastructure &amp; Réseaux
+        <span class="hero__title-accent">au Conseil Départemental de la Somme</span>
+      </h1>
+      <p class="hero__sub reveal">
+        Quatre semaines au cœur de la Direction des Systèmes d'Information.
+      </p>
+
+      <div class="garde reveal">
+        <div class="garde__item"><span class="garde__k">Étudiant</span><span class="garde__v">METGY Léo</span></div>
+        <div class="garde__item"><span class="garde__k">Formation</span><span class="garde__v">BTS SIO - SISR · Lycée Saint-Rémi, Amiens</span></div>
+        <div class="garde__item"><span class="garde__k">Structure</span><span class="garde__v">Conseil Départemental de la Somme · DSI</span></div>
+        <div class="garde__item"><span class="garde__k">Période</span><span class="garde__v">01/06/2026 → 26/06/2026</span></div>
+        <div class="garde__item"><span class="garde__k">Tuteur</span><span class="garde__v">Mr. Marc Foratier</span></div>
+        <div class="garde__item"><span class="garde__k">Lieu</span><span class="garde__v">Amiens (Somme)</span></div>
+      </div>
+
+      <div class="hero__cta reveal">
+        <a href="#introduction" class="btn btn--primary">Lire le rapport</a>
+        <a href="#annexes" class="btn btn--ghost">Voir les photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOMMAIRE ============ -->
+  <section class="section" id="sommaire">
+    <div class="section__head reveal">
+      <span class="section__kicker">Sommaire</span>
+      <h2 class="section__title">Table des matières</h2>
+    </div>
+    <div class="toc-wrap reveal">
+      <ol class="toc">
+        <li><a href="#introduction"><span class="toc__n">01</span><span class="toc__t">Introduction générale</span><span class="toc__l"></span></a></li>
+        <li><a href="#entreprise"><span class="toc__n">02</span><span class="toc__t">Présentation du Conseil Départemental</span><span class="toc__l"></span></a></li>
+        <li><a href="#missions"><span class="toc__n">03</span><span class="toc__t">Mes missions : support, réseau &amp; téléphonie</span><span class="toc__l"></span></a></li>
+        <li><a href="#competences"><span class="toc__n">04</span><span class="toc__t">Compétences acquises</span><span class="toc__l"></span></a></li>
+        <li><a href="#projet"><span class="toc__n">05</span><span class="toc__t">Projet technique : configurer des switches Cisco</span><span class="toc__l"></span></a></li>
+        <li><a href="#bilan"><span class="toc__n">06</span><span class="toc__t">Bilan &amp; conclusion</span><span class="toc__l"></span></a></li>
+        <li><a href="#remerciements"><span class="toc__n">07</span><span class="toc__t">Remerciements</span><span class="toc__l"></span></a></li>
+        <li><a href="#annexes"><span class="toc__n">08</span><span class="toc__t">Galerie - le stage en images</span><span class="toc__l"></span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ INTRODUCTION ============ -->
+  <section class="section" id="introduction">
+    <div class="section__head reveal">
+      <span class="section__kicker">01 - Introduction générale</span>
+      <h2 class="section__title">Pourquoi ce stage, et ce que je voulais en tirer</h2>
+    </div>
+
+    <div class="intro-grid">
+      <article class="intro-block reveal">
+        <span class="hand-note">un peu de moi</span>
+        <h3>Mon parcours</h3>
+        <p>Je suis en 1ère année de <strong>BTS SIO</strong> (option <strong>SISR</strong>) au lycée Saint-Rémi à Amiens. Passionné de réseau et de cybersécurité, ce stage est ma première vraie expérience du monde du travail en informatique.</p>
+      </article>
+      <article class="intro-block reveal">
+        <h3>Le choix de la structure</h3>
+        <p>J'ai choisi le <strong>Conseil Départemental de la Somme</strong> parce qu'il a un gros parc informatique (VLANs, IP, serveurs). Il gère plein de sites différents, donc on ne fait jamais deux fois la même chose : c'est parfait pour apprendre.</p>
+      </article>
+      <article class="intro-block intro-block--wide reveal">
+        <h3>Mes objectifs</h3>
+        <ul class="obj-list">
+          <li>Découvrir le fonctionnement de l'informatique dans le secteur public.</li>
+          <li>Apprendre à préparer et installer des postes pour les utilisateurs.</li>
+          <li>Toucher à la gestion réseau sur Cisco et Alcatel.</li>
+          <li>Mettre en pratique la sécurité informatique.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="plan reveal">
+      <span class="plan__label">Annonce du plan</span>
+      <div class="plan__row">
+        <div class="plan__item"><span>I</span><p>Présentation du Conseil Départemental</p></div>
+        <div class="plan__item"><span>II</span><p>Mes missions : support, réseau &amp; téléphonie</p></div>
+        <div class="plan__item"><span>III</span><p>Projet technique : configurer des switches Cisco</p></div>
+        <div class="plan__item"><span>IV</span><p>Bilan : ce que j'ai appris et la suite</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ I - PRÉSENTATION ENTREPRISE ============ -->
+  <section class="section section--alt" id="entreprise" data-part="I">
+    <div class="section__head reveal">
+      <span class="section__kicker">Partie I - Présentation</span>
+      <h2 class="section__title">Le Conseil Départemental de la Somme</h2>
+      <p class="section__lead">
+        Une collectivité qui s'occupe de tout un département, avec une grosse
+        infrastructure informatique pour faire tourner ses services.
+      </p>
+    </div>
+
+    <div class="kpi-row reveal">
+      <div class="kpi"><span class="kpi__num" data-count="570" data-suffix=" 000">0</span><span class="kpi__lbl">habitants dans la Somme</span></div>
+      <div class="kpi"><span class="kpi__num" data-count="2500" data-suffix="+">0</span><span class="kpi__lbl">postes de travail gérés</span></div>
+      <div class="kpi"><span class="kpi__num" data-count="3" data-suffix="">0</span><span class="kpi__lbl">constructeurs : Cisco · Fortinet · Alcatel</span></div>
+    </div>
+
+    <div class="ctx-grid">
+      <article class="ctx-card reveal">
+        <div class="ctx-card__icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg></div>
+        <h3>La structure</h3>
+        <p>Une collectivité de 570 000 habitants qui s'occupe de l'action sociale, des collèges, de l'aménagement du territoire et des routes. Le siège est au 43 rue de la République, à Amiens.</p>
+      </article>
+      <article class="ctx-card reveal">
+        <div class="ctx-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="8" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 8h.01M7 17h.01"/></svg></div>
+        <h3>La DSI</h3>
+        <p>La Direction des Systèmes d'Information gère plus de 2500 postes partout dans le département. Elle s'occupe du matériel Cisco, Fortinet et Alcatel-Lucent, de la sécurité des données et de l'aide aux agents.</p>
+      </article>
+      <article class="ctx-card reveal">
+        <div class="ctx-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Ma place</h3>
+        <p>J'étais dans l'équipe Support &amp; Réseau : d'abord regarder, puis participer aux configs, aux installations et aux dépannages, au bureau comme sur le terrain.</p>
+      </article>
+    </div>
+
+  </section>
+
+  <!-- ============ SALLE MAX LEJEUNE (œuvre) ============ -->
+  <section class="showcase" id="salle" aria-label="Salle Max Lejeune">
+    <div class="showcase__head reveal">
+      <span class="section__kicker">Interlude</span>
+      <h2 class="section__title">La salle Max Lejeune</h2>
+      <p class="section__lead">
+        C'est la salle où les élus de la Somme votent les budgets. Un endroit avec
+        beaucoup d'histoire que la DSI équipe et entretient
+        sans qu'on le voie (caméras, micros, réseau). Ça montre bien pourquoi
+        le réseau doit toujours marcher.
+      </p>
+    </div>
+    <div class="showcase__grid">
+      <figure class="showcase__item showcase__item--big reveal zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image2.webp" type="image/webp" />
+          <img src="assets/images/image2.jpg" alt="Salle Max Lejeune : l'hémicycle en bois où votent les élus de la Somme" loading="lazy" decoding="async" />
+        </picture>
+        <figcaption>L'hémicycle</figcaption>
+      </figure>
+      <figure class="showcase__item reveal zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image3.webp" type="image/webp" />
+          <img src="assets/images/image3.jpg" alt="Fresque murale de la salle Max Lejeune" loading="lazy" decoding="async" />
+        </picture>
+        <figcaption>La fresque murale</figcaption>
+      </figure>
+      <figure class="showcase__item reveal zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image4.webp" type="image/webp" />
+          <img src="assets/images/image4.jpg" alt="Plafond ovale ouvragé de la salle Max Lejeune" loading="lazy" decoding="async" />
+        </picture>
+        <figcaption>Le plafond avec moulures</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ II - MISSIONS ============ -->
+  <section class="section" id="missions" data-part="II">
+    <div class="section__head reveal">
+      <span class="section__kicker">Partie II - Mes missions</span>
+      <h2 class="section__title">Support, réseau &amp; téléphonie</h2>
+      <p class="section__lead">
+        Tous les jours, trois grands domaines : découvrir et entretenir l'infrastructure,
+        gérer la téléphonie sur IP et dépanner les utilisateurs sur place.
+      </p>
+    </div>
+
+    <!-- II.1 Infrastructure -->
+    <h3 class="sub-head reveal"><span>II.1</span> L'infrastructure découverte</h3>
+    <ul class="spec-list reveal">
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><rect x="4" y="3" width="16" height="5" rx="1"/><rect x="4" y="10" width="16" height="5" rx="1"/><rect x="4" y="17" width="16" height="4" rx="1"/><path d="M7 5.5h.01M7 12.5h.01"/></svg>
+        <div><h4>Baie de serveurs</h4><p>Cœur physique du SI : serveurs, équipements réseau et brassage centralisé.</p></div>
+      </li>
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><h4>Pare-feu Fortinet</h4><p>FortiGate pour le pilotage du pare-feu, FortiAnalyzer pour la gestion des logs.</p></div>
+      </li>
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><rect x="3" y="8" width="18" height="8" rx="1.5"/><path d="M7 12h2M11 12h2M15 12h2"/></svg>
+        <div><h4>Switches Cisco &amp; Alcatel</h4><p>Catalyst 9200, C1000 et stack Alcatel 8770 pour la voix.</p></div>
+      </li>
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+        <div><h4>Stockage 100% NVMe</h4><p>Serveur de stockage full flash pour des performances d'accès élevées.</p></div>
+      </li>
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="8" cy="12" r="2.2"/><circle cx="16" cy="12" r="2.2"/></svg>
+        <div><h4>Sauvegarde sur bande</h4><p>Robot sur bandes magnétiques : archivage longue durée.</p></div>
+      </li>
+      <li class="spec">
+        <svg viewBox="0 0 24 24" class="spec__ico"><path d="M4 12c2-4 14-4 16 0M7 12c1.2-2 9-2 10 0M10 12c.5-.8 3.5-.8 4 0"/><circle cx="12" cy="15" r="1.4"/></svg>
+        <div><h4>Arrivée fibre optique</h4><p>Liens haut débit et capteurs, jusqu'aux appareils de mesure des écluses.</p></div>
+      </li>
+    </ul>
+
+    <div class="feature feature--reverse reveal">
+      <div class="feature__media zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image5.webp" type="image/webp" />
+          <img src="assets/images/image5.jpg" alt="Baie de brassage de l'Hôtel des Feuillants : switches, patch panels et câblage" loading="lazy" decoding="async" />
+        </picture>
+        <span class="feature__tag">Baie des Feuillants</span>
+      </div>
+      <div class="feature__txt">
+        <span class="hand-note">pas toujours photogénique...</span>
+        <h3>Le brassage, en vrai</h3>
+        <p>Voici une vraie baie en service, à l'Hôtel des Feuillants (le site des élus) : des dizaines de switches, de patch panels et de câbles cuivre et fibre. J'ai appris à m'y retrouver et à suivre un câble du port jusqu'à la prise murale.</p>
+        <p class="feature__sub">Une partie du stage a servi à remettre de l'ordre : enlever les vieux câbles, ranger proprement et couper les ports qui ne servent pas.</p>
+      </div>
+    </div>
+
+    <!-- II.2 Outils -->
+    <h3 class="sub-head reveal"><span>II.2</span> Les outils du quotidien</h3>
+    <div class="chips-groups">
+      <div class="chip-group reveal">
+        <span class="chip-group__label">Sécurité</span>
+        <ul class="chips">
+          <li><img class="chip__ico" src="assets/logos/sentinelone.png" alt="" />SentinelOne</li>
+          <li><img class="chip__ico" src="assets/logos/fortinet.png" alt="" />FortiGate</li>
+          <li><img class="chip__ico" src="assets/logos/fortinet.png" alt="" />FortiAnalyzer</li>
+          <li><img class="chip__ico" src="assets/logos/vaultwarden.png" alt="" />VaultWarden</li>
+          <li><img class="chip__ico chip__ico--zoom" src="assets/logos/hucency.png" alt="" />Hucency</li>
+        </ul>
+      </div>
+      <div class="chip-group reveal">
+        <span class="chip-group__label">Supervision &amp; réseau</span>
+        <ul class="chips">
+          <li><img class="chip__ico" src="assets/logos/centreon.png" alt="" />Centreon</li>
+          <li><img class="chip__ico" src="assets/logos/cisco.png" alt="" />Catalyst Center</li>
+          <li><img class="chip__ico" src="assets/logos/kiwicattools.png" alt="" />KiwiCatTools</li>
+          <li><img class="chip__ico" src="assets/logos/omnivista.png" alt="" />Omnivista 8770</li>
+        </ul>
+      </div>
+      <div class="chip-group reveal">
+        <span class="chip-group__label">Administration &amp; accès</span>
+        <ul class="chips">
+          <li><img class="chip__ico" src="assets/logos/putty.png" alt="" />PuTTY</li>
+          <li><img class="chip__ico" src="assets/logos/mremoteng.png" alt="" />mRemoteNG</li>
+          <li><img class="chip__ico" src="assets/logos/teamviewer.png" alt="" />TeamViewer</li>
+          <li><img class="chip__ico" src="assets/logos/activedirectory.png" alt="" />Active Directory</li>
+          <li><img class="chip__ico" src="assets/logos/pki.png" alt="" />PKI</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- II.3 Déroulé -->
+    <h3 class="sub-head reveal"><span>II.3</span> Le déroulé, semaine après semaine</h3>
+    <div class="timeline">
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"><span>S1</span></div>
+        <div class="tl-item__body">
+          <span class="tl-item__date">01 → 05 juin</span>
+          <h3>Découverte &amp; premières mains</h3>
+          <p>Présentation de l'infrastructure et des logiciels, dont la téléphonie sur Omnivista 8770. Premier déploiement de matériel chez Ameva. Découverte des commandes <code>device-tracking database</code> et <code>show lldp neighbors</code>, puis configuration d'un switch Cisco C9200CX (utilisateurs chiffrés, 4 VLANs, route par défaut, SNMP).</p>
+          <div class="tl-tags"><span>VLAN</span><span>Téléphonie IP</span><span>Cisco IOS</span><span>PuTTY</span></div>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"><span>S2</span></div>
+        <div class="tl-item__body">
+          <span class="tl-item__date">08 → 12 juin</span>
+          <h3>WiFi, dépannages &amp; fibre</h3>
+          <p>Déploiement de 2 bornes WiFi Cisco 9120AXI via Catalyst Center pour le lycée Saint-Riquier. Réinstallation complète d'un MacBook Pro M3 Max. Passage de la téléphonie en IP fixe chez Ameva, tirage de 4 fibres optiques 10G et diagnostic d'un port de switch grillé.</p>
+          <div class="tl-tags"><span>WiFi Cisco</span><span>Catalyst Center</span><span>Fibre 10G</span><span>Diagnostic</span></div>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"><span>S3</span></div>
+        <div class="tl-item__body">
+          <span class="tl-item__date">15 → 19 juin</span>
+          <h3>Sécurité des ports &amp; mises à jour</h3>
+          <p>Activation de <code>ip dhcp snooping</code> et <code>ip arp inspection trust</code>, résolution de problèmes de DAI. Mise à jour de 3 switches C9200 via clé USB, reset propre de switches C1000. Déploiement complet au CDEF Amiens : box Orange Pro, switch, bornes WiFi, passage en IP fixe.</p>
+          <div class="tl-tags"><span>DHCP Snooping</span><span>DAI</span><span>IOS Upgrade</span><span>Hardening</span></div>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <div class="tl-item__marker"><span>S4</span></div>
+        <div class="tl-item__body">
+          <span class="tl-item__date">22 → 26 juin</span>
+          <h3>Interventions critiques sur sites</h3>
+          <p>Redémarrage d'une stack de switches tombée en production. Diagnostic réseau à l'Historial de la Grande Guerre de Péronne après une coupure orage (distinction matériel département / prestataire). Configuration de switches C1000 sur mesure et remplacements de téléphonie sur plusieurs sites.</p>
+          <div class="tl-tags"><span>Production</span><span>Diagnostic terrain</span><span>Continuité</span><span>Autonomie</span></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- II.4 Téléphonie sur IP -->
+    <h3 class="sub-head reveal"><span>II.4</span> Téléphonie sur IP</h3>
+    <div class="feature reveal">
+      <div class="feature__media zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image11.webp" type="image/webp" />
+          <img src="assets/images/image11.jpg" alt="Écran d'un téléphone Alcatel affichant ses paramètres IP" loading="lazy" decoding="async" />
+        </picture>
+        <span class="feature__tag">Téléphonie IP</span>
+      </div>
+      <div class="feature__txt">
+        <span class="hand-note"># puis i au démarrage</span>
+        <h3>Passer un téléphone en IP fixe</h3>
+        <p>Sur les téléphones Alcatel, j'ai changé le mode IP de Dynamic à Static pour passer le téléphone en IP fixe. J'ai aussi rentré l'adresse, le masque, la passerelle, les DNS, le VLAN et le serveur SFTP. De petites manips à refaire sur plusieurs sites : Ameva, mairies, MDA…</p>
+        <p class="feature__sub">Ça m'a permis de comprendre comment la voix et les données passent sur le même câble grâce au voice VLAN.</p>
+      </div>
+    </div>
+
+    <!-- II.5 Sécurité / Tiering -->
+    <h3 class="sub-head reveal"><span>II.5</span> Bonnes pratiques</h3>
+    <p class="sub-lead reveal">Plusieurs bonnes pratiques que j'ai vues pendant mon stage pour mieux protéger le système d'information.</p>
+
+    <h4 class="practice__title reveal">Le modèle en tiers</h4>
+    <p class="sub-lead reveal">Séparer les niveaux d'administration pour qu'un piratage ne se propage pas partout.</p>
+    <div class="tier">
+      <div class="tier__row tier__row--0 reveal"><div class="tier__badge">Tier 0</div><div class="tier__txt"><h3>Cœur du système</h3><p>Active Directory, PKI (clés et certificats). Ces comptes servent seulement sur des postes dédiés - jamais pour lire ses mails ou aller sur Internet.</p></div></div>
+      <div class="tier__row tier__row--1 reveal"><div class="tier__badge">Tier 1</div><div class="tier__txt"><h3>Serveurs métiers</h3><p>Serveurs de fichiers, bases de données, intranet. Un compte Tier 1 gère ces serveurs mais ne peut pas se connecter à un appareil du Tier 2.</p></div></div>
+      <div class="tier__row tier__row--2 reveal"><div class="tier__badge">Tier 2</div><div class="tier__txt"><h3>Postes utilisateurs</h3><p>Ordinateurs portables, smartphones, tablettes, imprimantes. Ils n'ont aucun droit sur les serveurs des niveaux au-dessus.</p></div></div>
+    </div>
+    <h4 class="practice__title practice__title--logo reveal">La sensibilisation au phishing avec Hucency <img class="practice__logo" src="assets/logos/hucency.png" alt="Hucency" /></h4>
+    <p class="sub-lead reveal"><strong>Hucency</strong> (avant « Avant de Cliquer ») est une plateforme qui apprend aux utilisateurs à repérer les tentatives de phishing en conditions réelles.</p>
+    <div class="practice-grid">
+      <div class="practice-card reveal">
+        <div class="practice-card__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6l9 6 9-6"/></svg>
+        </div>
+        <h3>Faux mails de phishing</h3>
+        <p>Hucency envoie aux employés de faux mails de phishing qui ressemblent à de vrais mails dangereux, sans les prévenir avant.</p>
+      </div>
+      <div class="practice-card reveal">
+        <div class="practice-card__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.7L1.8 18a1.8 1.8 0 0 0 1.5 2.7h17.4A1.8 1.8 0 0 0 22.2 18L13.7 3.7a1.8 1.8 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        </div>
+        <h3>Alerte au clic</h3>
+        <p>Quand un utilisateur clique sur le lien piégé, il est tout de suite prévenu que c'était un test et envoyé vers un contenu pour apprendre.</p>
+      </div>
+      <div class="practice-card reveal">
+        <div class="practice-card__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12.5" y="7" width="3" height="10"/><rect x="18" y="13" width="3" height="4"/></svg>
+        </div>
+        <h3>Statistiques</h3>
+        <p>La plateforme crée des statistiques (taux de clic, utilisateurs à risque, progression dans le temps) pour voir si les campagnes marchent.</p>
+      </div>
+      <div class="practice-card reveal">
+        <div class="practice-card__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L1.5 8.5 12 14l10.5-5.5L12 3z"/><path d="M5 10.5V16c0 1.5 3.1 3 7 3s7-1.5 7-3v-5.5"/><path d="M22.5 8.5V14"/></svg>
+        </div>
+        <h3>E-learning</h3>
+        <p>Des modules de formation et du e-learning aident les utilisateurs à garder les bons réflexes face aux menaces sur le long terme.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPÉTENCES ACQUISES ============ -->
+  <section class="section" id="competences">
+    <div class="section__head reveal">
+      <span class="section__kicker">Compétences acquises</span>
+      <h2 class="section__title">Ce que j'ai appris</h2>
+      <p class="section__lead">Quatre familles de compétences SISR que j'ai travaillées pendant le stage.</p>
+    </div>
+    <div class="comp-grid">
+      <article class="comp-card reveal">
+        <div class="comp-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="1.5"/><path d="M6 12h.01M9 12h.01M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3M3 15v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/></svg></div>
+        <h3>Réseaux &amp; commutation</h3>
+        <ul><li>Configuration de switches Cisco (Catalyst 9200, C1000)</li><li>VLANs, ports access &amp; trunk, voice VLAN</li><li>Route par défaut, SNMP, comptes chiffrés</li><li>Mise à jour IOS et reset d'équipements</li></ul>
+      </article>
+      <article class="comp-card reveal">
+        <div class="comp-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M12 8v4M12 15h.01"/></svg></div>
+        <h3>Sécurité réseau</h3>
+        <ul><li>DHCP Snooping &amp; Dynamic ARP Inspection</li><li>Modèle de cloisonnement en tiers (0/1/2)</li><li>Règles de pare-feu FortiGate</li><li>Désactivation des ports inutilisés (hardening)</li></ul>
+      </article>
+      <article class="comp-card reveal">
+        <div class="comp-card__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
+        <h3>Téléphonie sur IP</h3>
+        <ul><li>Stack Alcatel 8770, PXE, nœuds, PABX/PCX</li><li>Administration via Omnivista 8770</li><li>Passage de téléphones en IP fixe (VLAN, DNS, SFTP)</li><li>Voice VLAN sur les switches</li></ul>
+      </article>
+      <article class="comp-card reveal">
+        <div class="comp-card__icon"><svg viewBox="2 4 18 18"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></svg></div>
+        <h3>Support &amp; dépannage</h3>
+        <ul><li>Méthode de diagnostic par élimination</li><li>Déploiement de postes &amp; périphériques</li><li>Réinstallation système, intégration au domaine AD</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ III - PROJET ============ -->
+  <section class="section section--alt" id="projet" data-part="III">
+    <div class="section__head reveal">
+      <span class="section__kicker">Partie III - Projet</span>
+      <h2 class="section__title">Configurer des switches Cisco de A à Z</h2>
+      <p class="section__lead">
+        La plus grosse partie du stage : prendre en main des switches Catalyst neufs,
+        les configurer en entier, les sécuriser, les mettre à jour puis les installer sur différents sites.
+      </p>
+    </div>
+
+    <div class="feature feature--reverse reveal">
+      <div class="feature__media zoomable" tabindex="0">
+        <picture>
+          <source srcset="assets/images/image12.webp" type="image/webp" />
+          <img src="assets/images/image12.jpg" alt="Poste de configuration : ordinateur portable, terminal Cisco IOS et switch C9200CX" loading="lazy" decoding="async" />
+        </picture>
+        <span class="feature__tag">En pleine config</span>
+      </div>
+      <div class="feature__txt">
+        <span class="hand-note">PuTTY + câble console</span>
+        <h3>Le poste de travail</h3>
+        <p>Un PC portable, la fiche de specs, le terminal IOS à l'écran et le switch <strong>Cisco C9200CX-12P-2X2G</strong> branché en console. À partir de là, j'ai fait toute la config : identité, utilisateurs, VLANs, routage, supervision, sécurité.</p>
+        <p class="feature__sub">C'est là que la théorie réseau du BTS est devenue concrète.</p>
+      </div>
+    </div>
+
+    <div class="proj-steps">
+      <div class="proj-step reveal"><span class="proj-step__n">1</span><div><h4>Identité &amp; accès</h4><p>Nom du switch, 5 utilisateurs avec mots de passe chiffrés, secret enable.</p></div></div>
+      <div class="proj-step reveal"><span class="proj-step__n">2</span><div><h4>VLANs</h4><p>5 INFORMATIQUE, 700 VoIP_REP, 910 Actif_WiFi, 1010 Admin_Cisco.</p></div></div>
+      <div class="proj-step reveal"><span class="proj-step__n">3</span><div><h4>Ports</h4><p>Access + voice VLAN pour la data/voix, trunk vers le cœur, ports inutilisés en shutdown.</p></div></div>
+      <div class="proj-step reveal"><span class="proj-step__n">4</span><div><h4>Routage &amp; supervision</h4><p>Route par défaut <code>0.0.0.0</code>, chaîne SNMP communautaire pour Centreon.</p></div></div>
+      <div class="proj-step reveal"><span class="proj-step__n">5</span><div><h4>Sécurité</h4><p>DHCP Snooping et ARP Inspection trust sur les ports de confiance.</p></div></div>
+      <div class="proj-step reveal"><span class="proj-step__n">6</span><div><h4>Mise à jour</h4><p>Upgrade IOS via clé USB, vérification d'intégrité puis <code>install … commit</code>.</p></div></div>
+    </div>
+
+    <h3 class="sub-head reveal"><span>III.2</span> Le plan d'adressage VLAN</h3>
+    <p class="sub-lead reveal">Découpage logique du switch : chaque usage isolé dans son propre VLAN, avec son sous-réseau et sa passerelle. <span class="hand-note hand-note--inline">schéma d'exemple - valeurs anonymisées</span></p>
+    <div class="vlan-plan reveal">
+      <table class="vlan-table">
+        <thead>
+          <tr><th>VLAN</th><th>Nom</th><th>Usage</th><th>Sous-réseau (ex.)</th><th>Passerelle</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>5</code></td><td>INFORMATIQUE</td><td>Postes &amp; données métier</td><td>10.0.5.0/24</td><td>10.0.5.254</td></tr>
+          <tr><td><code>700</code></td><td>VoIP_REP</td><td>Téléphonie IP (voice VLAN)</td><td>10.0.7.0/24</td><td>10.0.7.254</td></tr>
+          <tr><td><code>910</code></td><td>Actif_WiFi</td><td>Bornes &amp; clients WiFi</td><td>10.0.91.0/24</td><td>10.0.91.254</td></tr>
+          <tr><td><code>1010</code></td><td>Admin_Cisco</td><td>Administration des équipements</td><td>10.0.101.0/24</td><td>10.0.101.254</td></tr>
+        </tbody>
+      </table>
+      <p class="vlan-note">Les ports access portent le VLAN data + le voice VLAN 700 ; les liens vers le cœur de réseau sont en trunk ; l'administration passe par le VLAN 1010, séparé du trafic utilisateur. Plages d'adressage volontairement génériques (données réelles confidentielles - Conseil Départemental).</p>
+    </div>
+
+  </section>
+
+  <!-- ============ IV - BILAN ============ -->
+  <section class="section" id="bilan" data-part="IV">
+    <div class="section__head reveal">
+      <span class="section__kicker">Partie IV - Bilan</span>
+      <h2 class="section__title">Ce que ce stage m'a apporté</h2>
+    </div>
+
+    <div class="bilan-grid">
+      <div class="bilan-card reveal"><h3>Technique</h3><p>J'ai vu comment marche un vrai réseau d'entreprise sur plusieurs sites : configurer un switch en console, et surveiller le tout avec Centreon et Catalyst Center.</p></div>
+      <div class="bilan-card reveal"><h3>Méthode</h3><p>J'ai appris à chercher une panne dans l'ordre : tester le câble, la prise, l'appareil et le port un par un pour trouver d'où vient le problème. Ça me servira tout le temps.</p></div>
+      <div class="bilan-card reveal"><h3>Posture pro</h3><p>J'ai travaillé en équipe sur de vraies interventions, en conditions réelles, et il fallait faire attention à ne pas couper le service sur des sites importants du département.</p></div>
+    </div>
+
+    <div class="conclusion reveal">
+      <span class="hand-note">pour conclure</span>
+      <h3>Conclusion</h3>
+      <p>
+        Ce stage m'a conforté dans mon choix de l'option <strong>SISR</strong>. J'ai découvert
+        comment marche l'informatique dans le public, j'ai mis les mains dans un vrai réseau
+        et j'ai vu comment on applique la sécurité au quotidien. Pour la suite, j'aimerais
+        continuer dans l'administration réseau et la cybersécurité, parce que c'est ce qui
+        me donne envie de faire ce métier.
+      </p>
+    </div>
+
+    <div class="quote reveal">
+      <span class="signature">- Léo</span>
+    </div>
+  </section>
+
+  <!-- ============ REMERCIEMENTS ============ -->
+  <section class="section section--alt" id="remerciements">
+    <div class="section__head reveal">
+      <span class="section__kicker">Remerciements</span>
+      <h2 class="section__title">Merci à celles et ceux qui ont rendu ce stage possible</h2>
+    </div>
+
+    <div class="thanks-grid">
+      <article class="thanks-card reveal">
+        <h3>À mon tuteur</h3>
+        <p><strong>Monsieur Marc Foratier</strong>, pour son accueil à la DSI et sa disponibilité pendant tout le stage.</p>
+      </article>
+      <article class="thanks-card reveal">
+        <h3>À la direction de la DSI</h3>
+        <p><strong>Monsieur Marc Brasseur</strong>, pour m'avoir permis d'intégrer son service et de vivre cette expérience.</p>
+      </article>
+      <article class="thanks-card reveal">
+        <h3>À l'équipe Support &amp; Réseau</h3>
+        <p>Nicolas, Alexandre, Simon, Victor, Clément, Timothée, Romain, Lionel et toute l'équipe pour leurs explications et pour m'avoir fait découvrir leur quotidien sur le terrain.</p>
+      </article>
+      <article class="thanks-card reveal">
+        <h3>Aux agents du Département</h3>
+        <p>Pour leur bon accueil, qui a rendu ce stage vraiment enrichissant. Merci pour votre confiance.</p>
+      </article>
+    </div>
+
+    <p class="thanks-merci reveal">Merci</p>
+  </section>
+
+  <!-- ============ ANNEXES - GALERIE ============ -->
+  <section class="section section--alt" id="annexes">
+    <div class="section__head reveal">
+      <span class="section__kicker">Annexes - Carnet de bord</span>
+      <h2 class="section__title">Le stage en images</h2>
+      <p class="section__lead">
+        Quelques photos prises sur le vif durant le stage.
+        <span class="hand-note hand-note--inline">clique pour agrandir</span>
+      </p>
+    </div>
+
+    <div class="gallery">
+      <figure class="pola pola--a reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image.webp" type="image/webp" /><img src="assets/images/image.jpg" alt="Façade du Conseil Départemental de la Somme" loading="lazy" decoding="async" /></picture><figcaption>Jour 1 - j'arrive au Conseil Départemental</figcaption></figure>
+      <figure class="pola pola--b reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image8.webp" type="image/webp" /><img src="assets/images/image8.jpg" alt="Switches Cisco C9200CX et Catalyst 1000 sur un bureau" loading="lazy" decoding="async" /></picture><figcaption>Mes premiers Cisco à configurer</figcaption></figure>
+      <figure class="pola pola--c reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image7.webp" type="image/webp" /><img src="assets/images/image7.jpg" alt="Câblage RJ45 bleu rangé proprement dans une baie" loading="lazy" decoding="async" /></picture><figcaption>Le câble management propre</figcaption></figure>
+      <figure class="pola pola--a reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image11.webp" type="image/webp" /><img src="assets/images/image11.jpg" alt="Écran d'un téléphone Alcatel affichant ses paramètres IP" loading="lazy" decoding="async" /></picture><figcaption>Téléphone Alcatel en IP DHCP (Dynamic)</figcaption></figure>
+      <figure class="pola pola--b reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image10.webp" type="image/webp" /><img src="assets/images/image10.jpg" alt="Câbles réseau triés par couleur au sol après dé-câblage" loading="lazy" decoding="async" /></picture><figcaption>Dé-câblage, tri par couleur</figcaption></figure>
+      <figure class="pola pola--c reveal zoomable" tabindex="0"><picture><source srcset="assets/images/image6.webp" type="image/webp" /><img src="assets/images/image6.jpg" alt="Baie de brassage dense en câbles" loading="lazy" decoding="async" /></picture><figcaption>Baie de l'Hôtel des Feuillants</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="section portfolio" id="portfolio">
+    <div class="portfolio__card reveal">
+      <span class="section__kicker">Portfolio</span>
+      <h2 class="section__title">Envie de voir plus de projets ?</h2>
+      <p class="portfolio__text">
+        Vous souhaitez découvrir davantage de projets réalisés ? Consultez mon
+        portfolio complet en cliquant sur le bouton ci-dessous.
+      </p>
+      <a class="btn btn--primary portfolio__btn" href="https://goken-0.github.io/Portfolio/#accueil" target="_blank" rel="noopener">
+        Cliquez ici pour entrer dans mon portfolio
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="24" height="6" rx="1.5"/><rect x="4" y="13" width="24" height="6" rx="1.5"/><rect x="4" y="21" width="24" height="6" rx="1.5"/></svg>
+        <span>Rapport de stage - BTS SIO SISR</span>
+      </div>
+      <p class="footer__meta">METGY Léo · Conseil Départemental de la Somme · Juin 2026</p>
+      <p class="footer__copy">Réalisé pour mon portfolio personnel · Hébergé sur GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+    <button class="lightbox__close" id="lb-close" aria-label="Fermer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" aria-label="Précédente">&#8249;</button>
+    <figure class="lightbox__fig">
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lb-next" aria-label="Suivante">&#8250;</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
