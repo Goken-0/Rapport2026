@@ -7,13 +7,11 @@
   *Infrastructure réseau, sécurité, téléphonie sur IP et interventions terrain.*
 
   <p>
-    <a href="https://goken-0.github.io/ResumeStage/">
+    <a href="https://goken-0.github.io/Rapport2026/">
       <img src="https://img.shields.io/badge/Voir_le_site_en_ligne-000000?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo">
     </a>
   </p>
 </div>
-
-<img src="assets/images/og-cover.jpg" alt="Rapport de stage — Conseil Départemental de la Somme" />
 
 
 
@@ -43,13 +41,13 @@ En parcourant le site, vous trouverez :
 * 🔐 **Sécurité** : modèle en tiers (0/1/2) et sensibilisation au phishing.
 * 🎓 **Compétences SISR** acquises pendant le stage.
 * 🖧 **Projet technique** : configuration de switches Cisco de A à Z + plan d'adressage VLAN.
-* 🖼 **Galerie** photo des interventions sur le terrain.
+* 🖼 **Galerie** photo prises lors du stage.
 
 ## 📂 Structure du projet
 Organisation des fichiers :
 
 ```bash
-ResumeStage/
+
 ├── assets/                     # Ressources du site
 │   ├── icons/                  # Favicons (svg, ico, apple-touch)
 │   ├── images/                 # Photos du stage, logo, og-cover
@@ -65,28 +63,6 @@ ResumeStage/
 ├── .gitignore                  # Fichiers exclus du versionnage
 └── README.md                   # Présentation du projet
 ```
-
-## 🚀 Lancer en local
-Aucune dépendance. Servir le dossier :
-
-```bash
-# Python
-python -m http.server 8000
-# puis ouvrir http://localhost:8000
-```
-
-Ou ouvrir directement `index.html` dans un navigateur.
-
-## ☁️ Déploiement (GitHub Pages)
-```bash
-git init
-git add .
-git commit -m "Rapport de stage SISR"
-git branch -M main
-git remote add origin https://github.com/Goken-0/ResumeStage.git
-git push -u origin main
-```
-Puis **Settings → Pages** : source = branche `main`, dossier `/ (root)`.
 
 ## 📫 Me contacter
 * 📧 Email : leogoken@gmail.com
